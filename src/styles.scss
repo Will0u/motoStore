@@ -1,1 +1,70 @@
 /* You can add global styles to this file, and also import other style files */
+ @import "scss/reboot";
+ @import "scss/variables";
+ @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&family=Smooch&display=swap');
+
+body{
+    font-family: "Roboto";
+}
+.texteDiv{
+    font-size: $fsMain;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .5rem;
+}
+
+h1 {
+    font-family: 'Josefin Sans';
+    text-transform: uppercase;
+    width: 65%;
+    margin-left: 2rem;
+    text-align: left;
+    padding: .5rem;
+    border-bottom: 2px solid black;
+}
+
+.flexCol {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.button-1 {
+    display: block;
+    width: fit-content;
+    background-color: black;
+    color: white;
+    padding: .5rem;
+    border-radius: 7px;
+    text-decoration: none;
+    transition: background-color .3s , color .3s, transform .3s ;
+}
+.button-1:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transform: scale(1.05);
+    transition: background-color .3s , color .3s ,transform .3s ;
+}
+
+#backBtn{
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+@media screen and (min-width: 480px) {
+    h1{width: fit-content;}
+    #cardContainer{
+        margin-top: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

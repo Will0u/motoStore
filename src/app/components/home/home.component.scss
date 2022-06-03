@@ -1,0 +1,25 @@
+
+#pageHeader{
+    margin-top: 10rem;
+}
+h1{
+    animation: appear linear 3.5s 1;
+}
+
+@keyframes appear {
+    0% {transform: translateX(-125%);}
+    2% {transform: translateX(-124%);}
+    4% {transform: translateX(-123%);}
+    6% {transform: translateX(-110%);}
+    8% {transform: translateX(-90%);}
+    10% {transform: translateX(-50%);}
+    12% {transform: translateX(-25%);}
+    14% {transform: translateX(-5%);}
+    16% {transform: translateX(-2%);}
+    18% {transform: translateX(-1%);}
+    20% {transform: translateX(10px);}
+    22% {transform: translateX(-5px);}
+    24% {transform: translateX(3px);}
+    26% {transform: translateX(-1px);}
+    28% {transform: translateX(0px);}
+}

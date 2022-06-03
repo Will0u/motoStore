@@ -1,0 +1,73 @@
+
+@import "/src/scss/variables";
+h1{
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+#marqueContainer{
+    
+    .marqueBox{
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        width: 150px;
+        height: 150px;
+        background-color: black;
+        margin-bottom: 1rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.eplaque.fr/wp-content/uploads/2020/03/11153010/carte-grise-moto.jpg");
+        background-size: cover;
+        text-decoration: none;
+        transition: transform .3s, box-shadow .3s;
+        span{
+            color: white;
+            transition: color .3s; 
+        }
+        span:hover{
+            color: lightgray;
+            transition: color .3s;
+        }
+    }
+    
+    .marqueBox:hover{
+        transform: scale(1.05);
+        box-shadow: $shadow;
+        transition: transform .3s, box-shadow .3s;
+    }
+}
+h1{
+    animation: appear linear 3.5s 1;
+}
+
+@keyframes appear {
+    0% {transform: translateX(-125%);}
+    2% {transform: translateX(-124%);}
+    4% {transform: translateX(-123%);}
+    6% {transform: translateX(-110%);}
+    8% {transform: translateX(-90%);}
+    10% {transform: translateX(-50%);}
+    12% {transform: translateX(-25%);}
+    14% {transform: translateX(-5%);}
+    16% {transform: translateX(-2%);}
+    18% {transform: translateX(-1%);}
+    20% {transform: translateX(10px);}
+    22% {transform: translateX(-5px);}
+    24% {transform: translateX(3px);}
+    26% {transform: translateX(-1px);}
+    28% {transform: translateX(0px);}
+}
+
+
+@media screen and (min-width: 480px){
+    #marqueContainer{
+        display: flex;
+        justify-content: center;
+    }
+    .marqueBox{
+        margin-left: .5rem;
+        margin-right: .5rem!important;
+    }
+}

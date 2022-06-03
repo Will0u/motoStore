@@ -1,0 +1,38 @@
+
+@import "/src/scss/variables";
+
+#backBtn{
+    display: block;
+    width: fit-content;
+    margin: 5rem auto 5rem auto;
+}
+header{
+    margin-top: 3rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.mutuelledesmotards.fr/sites/default/files/styles/lmdm_full/public/2018-09/LOW_shutterstock_260759894.jpg");
+    height: 250px;
+    background-size: cover;
+    box-shadow: $shadow;
+    div{
+        display: flex;
+        color: white;
+        text-transform: uppercase;;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+    }
+}
+img{width: 100%;}
+.info {
+    .flexCol{
+margin-left:2rem ; }
+}
+section{margin-bottom: 5rem;}
+
+@media screen and (min-width: 480px) {
+    section{
+        display: flex;
+        img{width: 50%;}
+    }
+}

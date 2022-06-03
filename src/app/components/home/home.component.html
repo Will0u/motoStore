@@ -1,0 +1,19 @@
+
+<section id="pageHeader" >
+    <h1>Bienvenue sur MotoStore !</h1>
+
+       <p class="texteDiv">Nous sommes bien plus que le plus grand magasin pour motos d'Europe.  MotoSore vous trouverez tout l’équipement correspondant à vos besoins, quel que soit votre niveau de pratique ou votre tranche d’âge. Retrouvez les plus grandes marques de motos à des prix ultra-compétitifs.</p> 
+
+</section>
+
+<section id="pageMain" >
+    <h1>les motos du moment !</h1>
+        <p class="texteDiv">
+            Ci-dessous les meilleurs motos que l'on retrouve sur le marché à prix top !
+        </p>
+
+    <div id="cardContainer">
+        <app-flash-card *ngFor="let motoFlash of motoFlashArray" [motoDisplay]="motoFlash" ></app-flash-card>    
+    </div>
+
+</section>

@@ -1,0 +1,44 @@
+@import "/src/scss/variables";
+
+nav{
+    display: flex;
+    background-color: $colorBg;
+    box-shadow: $shadow;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 9;
+
+    div {
+        background-color: white;
+        img{width: 90px;}
+        border-bottom: 1px solid black;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+        li{list-style-type: none;}
+        a{
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            transition: color .3s , transform .3s;
+        }
+        a:hover{
+            display: block;
+            color: lightgray;
+            transform: scale(1.05);
+            transition: color .3s , transform .3s;
+        }
+        a:active{
+            transform: scale(0.95);
+            transition: transform .3s;
+        }
+    }   
+}

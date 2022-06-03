@@ -1,0 +1,28 @@
+
+<header *ngIf="displayMoto" >
+    <div>
+        <span>{{ displayMoto.nom }}</span>
+    </div>
+</header>
+
+<section *ngIf="displayMoto" >
+    <img src="{{ displayMoto.image }}" alt="Photo de {{ displayMoto.nom }}">
+
+    <div class="info" >
+        <h1>{{ displayMoto.nom }}</h1>
+        <div class="flexCol" >
+            <span class="price">Prix : {{ displayMoto.prix }}€ </span>
+            <span>Année : {{ displayMoto.annee }}</span>
+
+            <span>Marque : {{ displayMoto.marque }}</span>
+
+            <span> Type : {{ displayMoto.type }}</span>
+
+            <span>Cylindrée : {{ displayMoto.cylindree }}</span>
+
+            <span>Km : {{ displayMoto.kilometres }}</span>
+        </div>
+    </div>
+</section>
+
+<a [routerLink]="['..']" class="button-1" id="backBtn">Retour</a>

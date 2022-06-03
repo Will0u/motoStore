@@ -1,0 +1,11 @@
+<div class="flashBox" *ngIf="motoDisplay">    
+    <img src="{{motoDisplay.image}}" alt="">
+    <div class="flexRow">
+        <div class="flexCol" >
+            <span class="flashTitle" >{{motoDisplay.nom}}</span>
+            <span> {{motoDisplay.marque}} </span>
+            <span class="flashPrice" >{{motoDisplay.prix}} €</span>  
+        </div>
+        <a class="button-1" [routerLink]="['/',motoDisplay.id]">détail</a>
+    </div>   
+</div>

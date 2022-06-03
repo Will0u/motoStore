@@ -1,0 +1,8 @@
+
+<h1>Motos de la marque {{ marqueUrl }}</h1>
+
+<div id="cardContainer" >
+    <app-flash-card *ngFor="let motoFlash of displayArray" [motoDisplay]="motoFlash" ></app-flash-card>    
+</div>
+
+<a [routerLink]="['..']" class="button-1" id="backBtn">Retour</a>

@@ -1,0 +1,12 @@
+
+<h1>Types que nous avons</h1>
+
+<div id="marqueContainer" >
+    <div *ngFor="let type of typeArray" >
+        <a [routerLink]="[type]" class="typeBox">
+            <span>{{ type }}</span>
+        </a>
+    </div>
+</div>
+
+<a [routerLink]="['..']" class="button-1" id="backBtn">Retour</a>

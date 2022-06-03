@@ -1,0 +1,14 @@
+
+
+<h1>marques que nous avons</h1>
+
+<div id="marqueContainer" >
+    <div *ngFor="let marque of marqueArray">
+        <a [routerLink]="[marque]" class="marqueBox">
+            <span>{{ marque }}</span>
+        </a>
+    </div>
+</div>
+
+<a [routerLink]="['..']" class="button-1" id="backBtn">Retour</a>
+
